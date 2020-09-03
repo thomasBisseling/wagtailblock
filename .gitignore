@@ -1,0 +1,6 @@
+dist/
+env/
+.python-version
+build/
+wagtailblock_register.egg-info/
+__pychache__
