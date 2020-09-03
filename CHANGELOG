@@ -3,3 +3,4 @@ Changelog
 
 01-09-2020| Changed path to find package.
 03-09-2020| Added function to group your blocks for diffrent streamfields
+03-09-2020| Add block to multiple groups and blocks.py is removed

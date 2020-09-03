@@ -5,7 +5,7 @@ import os
 
 from wagtail.utils.setup import assets, sdist, check_bdist_egg
 
-version = 1.5
+version = 1.7
 
 try:
     from setuptools import setup, find_packages

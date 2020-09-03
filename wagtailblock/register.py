@@ -11,8 +11,7 @@ def search_for_hooks():
     if not _searched_for_hooks:
         list(get_app_submodules(getattr(settings, "WAGTAILBLOCK_COLLECTOR", "blocks")))
         _searched_for_hooks = True
-
-
+    
 def register_block(block):
 
     block_label = block.__name__
@@ -20,10 +19,17 @@ def register_block(block):
     icon = getattr(block().meta, "icon", "fa-leaf")
     group = getattr(block(), "list_group", "default")
 
-    if group not in _block_list:
-        _block_list[group] = []
+    if isinstance(group, list):
+        for x in group:
+            if x not in _block_list:
+                _block_list[x] = []
+            _block_list[x].append((block_label, block(icon=icon, label="{}".format(label))))
+            
+    else:
+        if group not in _block_list:
+            _block_list[group] = []
 
-    _block_list[group].append((block_label, block(icon=icon, label="{}".format(label))))
+        _block_list[group].append((block_label, block(icon=icon, label="{}".format(label))))
 
 
 def call_blocks(group="default"):
