@@ -27,13 +27,13 @@ except ImportError:
     pass
 
 setup(
-    name="wagtailblock-register",
+    name="wagtailblock",
     version=version,
-    description="Register wagtailblocks with a simple decorator",
+    description="Register wagtailblock with a simple decorator",
     author="Thomas Bisseling",
     author_email="thomasbisselinghall@gmail.com",  # For support queries, please see https://docs.wagtail.io/en/stable/support.html
     packages=find_packages(),
-    url="https://github.com/thomasBisseling/wagtailblock-register",
+    url="https://github.com/thomasBisseling/wagtailblock",
     long_description="\n\n".join([README]),
     long_description_content_type="text/markdown",
     include_package_data=True,

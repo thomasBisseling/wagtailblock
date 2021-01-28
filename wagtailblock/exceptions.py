@@ -1,0 +1,2 @@
+class WagtailBlockContainerException(Exception):
+    pass
