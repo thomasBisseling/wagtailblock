@@ -19,7 +19,10 @@ def global_admin_css():
         w.write(content)
 
     folders = [
-        {"folder_name": "wagtailblock", "assets": [{"from": "scss", "to": "css"}]},
+        {
+            "folder_name": "wagtailblock",
+            "assets": [{"from": "scss", "to": "css"}],
+        },
         {"folder_name": "wagtaildocs", "assets": [{"from": "scss", "to": "css"}]},
         {"folder_name": "wagtailimages", "assets": [{"from": "scss", "to": "css"}]},
         {
@@ -32,9 +35,12 @@ def global_admin_css():
     ]
 
     for folder in folders:
+        src = f"{os.path.dirname(__file__)}/static_src/{folder['folder_name']}"
+        dst = f"{os.path.dirname(__file__)}/static/{folder['folder_name']}"
+
         for assets in folder["assets"]:
-            scss_dir = f"{os.path.dirname(__file__)}/static_src/{folder['folder_name']}/{assets['from']}"
-            css_dir = f"{os.path.dirname(__file__)}/static/{folder['folder_name']}/{assets['to']}"
+            scss_dir = f"{src}/{assets['from']}"
+            css_dir = f"{dst}/{assets['to']}"
             sass.compile(dirname=(scss_dir, css_dir), output_style="compressed")
 
     return format_html(

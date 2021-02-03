@@ -4,3 +4,10 @@ $font-root: $static-root + "fonts/";
 
 @import "settings/variables";
 @import "../../../../../client/scss/styles.scss";
+
+.bg-navbar {
+    background-color: $nav-background;
+}
+.wagtail-logo-container__mobile .rm-width {
+    width: auto;
+}

@@ -64,7 +64,7 @@
         &:focus {
             background-color: $nav-item-hover-bg;
             color: $color-white;
-            text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+            text-shadow: none;
         }
     }
 
@@ -93,10 +93,10 @@
 
     .menu-active {
         background: $nav-item-active-bg;
-        text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+        text-shadow: none;
 
         > a {
-            border-left-color: $color-secondary;
+            border-left-color: $theme-color;
             color: $color-white;
         }
     }
@@ -179,7 +179,7 @@
         }
 
         &:hover {
-            background-color: rgba(100, 100, 100, 0.2);
+            background-color: rgba($color-menu-text, 0.2);
         }
     }
 
@@ -357,9 +357,9 @@ body.explorer-open {
             cursor: pointer;
 
             &:hover {
-                background-color: rgba(100, 100, 100, 0.15);
-                color: $color-white;
-                text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+                background-color: rgba($nav-footer-account-bg, 0.9);
+                background-color: rgba($color-menu-text, 0.2);
+                text-shadow: none;
             }
 
             .avatar {
@@ -445,7 +445,7 @@ body.explorer-open {
         background: $nav-submenu-bg;
 
         > a {
-            text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+            text-shadow: none;
 
             &:hover {
                 background-color: transparent;

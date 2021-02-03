@@ -24,3 +24,15 @@ def theme_colors():
         if key not in WAGTAIL_THEME.keys():
             raise ValueError(f"Theme option '{key}' unable to use")
     return theme
+
+
+@register.inclusion_tag("wagtailblock/logo.html")
+def get_custom_logo():
+    # Value must be a static location
+    if settings.WAGTAILBLOCK_LOGO:
+        return {
+            "logo_path": settings.WAGTAILBLOCK_LOGO["path"],
+            "logo_size_desktop": settings.WAGTAILBLOCK_LOGO.get("size", 80),
+            "logo_size_mobile": settings.WAGTAILBLOCK_LOGO.get("size", 80) * 2,
+        }
+    return {}

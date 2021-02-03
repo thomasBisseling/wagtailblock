@@ -6,7 +6,6 @@ $color-grey-2: darken($color-white, 70);
 $color-grey-3: darken($color-white, 15);
 $color-grey-4: darken($color-white, 10);
 $color-grey-5: darken($color-white, 2);
-$color-menu-text: darken($color-white, 20);
 $color-thead-bg: $color-grey-5;
 $color-header-bg: $theme-color;
 $color-fieldset-hover: $color-grey-5;
@@ -29,8 +28,8 @@ $color-text-base: darken($color-white, 85);
 $color-text-input: darken($color-white, 90);
 
 $nav-item-hover-bg: rgba(100, 100, 100, 0.15);
-$nav-item-active-bg: darken($color-white, 90);
-$nav-submenu-bg: darken($color-white, 85);
+$nav-item-active-bg: darken($nav-background, 4);
+$nav-submenu-bg: lighten($nav-background, 4);
 $nav-footer-account-bg: $nav-item-active-bg;
 $nav-footer-submenu-bg: $nav-submenu-bg;
 $nav-footer-open-height: $nav-footer-closed-height + $nav-footer-submenu-height;
@@ -52,3 +51,5 @@ $breakpoints: (
   lg: 75em,
   xl: 100em,
 );
+
+$text-color: $color-white;

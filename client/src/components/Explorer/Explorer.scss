@@ -1,7 +1,7 @@
-$c-explorer-bg: #4c4e4d;
+$c-explorer-bg: $nav-submenu-bg;
 $c-explorer-bg-dark: $nav-background;
 $c-explorer-bg-active: rgba(0, 0, 0, 0.425);
-$c-explorer-secondary: #a5a5a5;
+$c-explorer-secondary: $text-color;
 $c-explorer-easing: cubic-bezier(0.075, 0.82, 0.165, 1);
 $menu-footer-height: 50px;
 
@@ -87,7 +87,7 @@ $menu-footer-height: 50px;
     display: block;
     background-color: $c-explorer-bg-dark;
     border-bottom: 1px solid $c-explorer-bg-dark;
-    color: $color-white;
+    color: $color-menu-text;
 }
 
 .c-explorer__header__title {
@@ -95,12 +95,12 @@ $menu-footer-height: 50px;
 
     &:focus {
         background-color: $c-explorer-bg-active;
-        color: $color-white;
+        color: darken($color-menu-text, 0.5);
     }
 
     // Overrides for default link hover.
     &:hover {
-        color: $color-white;
+        color: darken($color-menu-text, 0.5);
     }
 
     @include hover {
@@ -216,7 +216,7 @@ $menu-footer-height: 50px;
 
     // Overrides for default link hover.
     &:hover {
-        color: $color-white;
+        color: darken($color-menu-text, 0.5);
     }
 
     @include hover {

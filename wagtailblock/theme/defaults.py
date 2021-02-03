@@ -23,6 +23,7 @@ WAGTAIL_THEME = {
     "color-state-draft": "#808080",
     "color-state-absent": "#ff8f11",
     "color-state-live-draft": "#43b1b0",
+    "color-menu-text": "#ccc",
     "thumbnail-width": "130px",
     "menu-width": "200px",
     "menu-width-max": "320px",
@@ -32,5 +33,6 @@ WAGTAIL_THEME = {
     "object-title-height": "40px",
     "nav-footer-closed-height": "50px",
     "nav-footer-submenu-height": "77px",
-    "nav-background": "#333"
+    "nav-background": "rgb(51, 51, 51)",
+    "content-background": "#fff"
 }

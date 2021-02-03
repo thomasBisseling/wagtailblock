@@ -1,0 +1,27 @@
+{% load wagtailadmin_tags %}
+
+<div class="wagtail-logo-container__mobile u-hidden@sm {% if logo_path %}bg-navbar{% endif %}">
+    {% if not logo_path %}
+    <img class="wagtail-logo wagtail-logo__full" src="{% versioned_static 'wagtailadmin/images/wagtail-logo.svg' %}"
+        alt="" width="80" />
+    {% else %}
+    <img class="wagtail-logo rm-width" src="{% versioned_static logo_path %}" alt="" width="{{ logo_size_mobile }}" />
+    {% endif %}
+</div>
+
+<div class="wagtail-logo-container__desktop u-hidden@xs" {% if not logo_path %} data-animated-logo-container{% endif %}>
+    {% if not logo_path %}
+    <div class="wagtail-logo-container-inner">
+        <img class="wagtail-logo wagtail-logo__body" src="{% versioned_static 'wagtailadmin/images/logo-body.svg' %}"
+            alt="" />
+        <img class="wagtail-logo wagtail-logo__tail" src="{% versioned_static 'wagtailadmin/images/logo-tail.svg' %}"
+            alt="" />
+        <img class="wagtail-logo wagtail-logo__eye--open"
+            src="{% versioned_static 'wagtailadmin/images/logo-eyeopen.svg' %}" alt="" />
+        <img class="wagtail-logo wagtail-logo__eye--closed"
+            src="{% versioned_static 'wagtailadmin/images/logo-eyeclosed.svg' %}" alt="" />
+    </div>
+    {% else %}
+    <img class="wagtail-logo bg-navbar" src="{% versioned_static logo_path %}" width="{{ logo_size_desktop }}" alt="" />
+    {% endif %}
+</div>

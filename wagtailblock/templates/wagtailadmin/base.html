@@ -1,21 +1,6 @@
 {% extends "wagtailadmin/base.html" %}
-{% comment %} {% load wagtailadmin_tags %}
+{% load wagtailblock_tags %}
 
-{% get_custom_logo as custom_logo %}
 {% block branding_logo %}
-<div class="wagtail-logo-container__mobile u-hidden@sm">
-    <img class="wagtail-logo wagtail-logo__full" src="{% versioned_static 'wagtailadmin/images/wagtail-logo.svg' %}"
-        alt="" width="80" />
-</div>
-
-<div class="wagtail-logo-container__desktop u-hidden@xs" data-animated-logo-container>
-    <div class="wagtail-logo-container-inner">
-        {% if custom_logo %}
-        <img class="wagtail-logo wagtail-logo__body" src="{% versioned_static 'wagtailadmin/images/logo-body.svg' %}" alt=""/>
-        <img class="wagtail-logo wagtail-logo__tail" src="{% versioned_static 'wagtailadmin/images/logo-tail.svg' %}" alt="" />
-        <img class="wagtail-logo wagtail-logo__eye--open" src="{% versioned_static 'wagtailadmin/images/logo-eyeopen.svg' %}" alt="" />
-        <img class="wagtail-logo wagtail-logo__eye--closed" src="{% versioned_static 'wagtailadmin/images/logo-eyeclosed.svg' %}" alt="" />
-        {% endif %}
-    </div>
-</div>
-{% endblock %} {% endcomment %}
+{% get_custom_logo %}
+{% endblock %}

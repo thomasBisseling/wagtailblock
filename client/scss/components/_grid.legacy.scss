@@ -16,7 +16,7 @@
 
 .content {
     @include row();
-    background: $color-white;
+    background: $content-background;
     border-top: 0 solid $color-grey-5; // this top border provides space for the floating logo to toggle the menu
     min-height: 100%;
     position: relative; // yuk. necessary for positions for jquery ui widgets
