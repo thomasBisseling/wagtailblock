@@ -6,3 +6,4 @@ wagtailblock_register.egg-info/
 __pychache__
 node_modules/
 .vscode
+static
