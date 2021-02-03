@@ -56,5 +56,5 @@ setup(
         "Framework :: Wagtail",
         "Topic :: Internet :: WWW/HTTP :: Site Management",
     ],
-    install_requires=["wagtail"],
+    install_requires=["wagtail", "pyScss"],
 )

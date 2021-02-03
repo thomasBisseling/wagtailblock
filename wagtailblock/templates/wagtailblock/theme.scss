@@ -1,0 +1,4 @@
+{% load wagtailblock_tags %}{% theme_colors as colors %}// Theme colors are located here
+{% for key, value in colors.items %}
+${{ key }}: {{ value }};
+{% endfor %}

@@ -1,0 +1,6 @@
+$static-root: "../";
+$images-root: $static-root + "images/";
+$font-root: $static-root + "fonts/";
+
+@import "settings/variables";
+@import "../../../../../client/scss/styles.scss";

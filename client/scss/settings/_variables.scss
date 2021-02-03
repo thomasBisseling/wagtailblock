@@ -1,0 +1,54 @@
+// Relative values
+$theme-color-darker: darken(adjust-hue($theme-color, 1), 4);
+$theme-color-dark: darken(adjust-hue($theme-color, 1), 7);
+$color-grey-1: darken($color-white, 80);
+$color-grey-2: darken($color-white, 70);
+$color-grey-3: darken($color-white, 15);
+$color-grey-4: darken($color-white, 10);
+$color-grey-5: darken($color-white, 2);
+$color-menu-text: darken($color-white, 20);
+$color-thead-bg: $color-grey-5;
+$color-header-bg: $theme-color;
+$color-fieldset-hover: $color-grey-5;
+$color-input-border: $color-grey-4;
+$color-input-focus: lighten(desaturate($theme-color, 40), 72);
+$color-input-focus-border: lighten(saturate($theme-color, 12), 10);
+$color-input-error-bg: lighten(saturate($color-danger, 28), 45);
+
+$color-button: $theme-color;
+$color-button-hover: $theme-color-darker;
+$color-button-yes: $color-success-dark;
+$color-button-yes-hover: darken($color-button-yes, 8%);
+$color-button-no: $color-danger-dark;
+$color-button-no-hover: darken($color-button-no, 20%);
+$color-button-warning: $color-warning-dark;
+$color-button-warning-hover: darken($color-button-warning, 20%);
+$color-link: $theme-color-darker;
+$color-link-hover: $theme-color-dark;
+$color-text-base: darken($color-white, 85);
+$color-text-input: darken($color-white, 90);
+
+$nav-item-hover-bg: rgba(100, 100, 100, 0.15);
+$nav-item-active-bg: darken($color-white, 90);
+$nav-submenu-bg: darken($color-white, 85);
+$nav-footer-account-bg: $nav-item-active-bg;
+$nav-footer-submenu-bg: $nav-submenu-bg;
+$nav-footer-open-height: $nav-footer-closed-height + $nav-footer-submenu-height;
+$nav-search-color: darken($color-white, 20);
+$nav-search-border: darken($color-white, 40);
+$nav-search-bg: $nav-background;
+$nav-search-hover-bg: $nav-item-hover-bg;
+$nav-search-focus-color: $color-white;
+$nav-search-focus-bg: $nav-item-hover-bg;
+
+$font-sans: Open Sans, Arial, sans-serif;
+$font-serif: Roboto Slab, Georgia, serif;
+
+$draftail-editor-z-index: $nav-wrapper-inner-z-index + 1;
+$breakpoints: (
+  xs: 0,
+  sm: 50em,
+  md: 56.25em,
+  lg: 75em,
+  xl: 100em,
+);

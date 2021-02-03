@@ -1,0 +1,9 @@
+.status-msg {
+    &.success {
+        color: $color-success-dark;
+    }
+
+    &.failure {
+        color: $color-danger-dark;
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "draftail": "^1.0",
+    "react-streamfield": "^0.9.6"
+  }
+}
