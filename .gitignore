@@ -3,7 +3,7 @@ env/
 .python-version
 build/
 wagtailblock_register.egg-info/
-__pychache__
+__pycache__
 node_modules/
 .vscode
 static
